@@ -1,0 +1,107 @@
+rosrun camera_calibration cameracalibrator.py image:=/camera/rgb/image_raw camera:=/camera/rgb --size 8x6 --square 0.0245
+
+rosrun camera_calibration cameracalibrator.py --size 8x6 ­ --square 0.0245 image:=/camera/ir/image camera:=/camera/ir --no-service-call
+
+rosrun camera_calibration cameracalibrator.py image:=/camera/ir/image_raw camera:=/camera/ir --size 8x6 --square 0.0245
+
+ rosrun image_view image_view image:=/camera/rgb/
+ 
+ STATE ESTIMATION FOR ROBOTICS A Matrix-Lie-Group Approach
+
+
+ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to opencv_contrib/modules/> ../opencv
+
+ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=<path to opencv_contrib/modules/> ../opencv
+
+
+ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES"-D OPENCV_EXTRA_MODULES_PATH=/home/ben/opencv_contrib/modules/ ..   
+
+ sudo apt-get install ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-rviz-launchers
+
+
+#if !defined (HAVE_CUDA) || defined (CUDA_DISABLER) || (CUDART_VERSION>=8000)
+
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+
+ echo $ROS_PACKAGE_PATH 
+ /home/ben/catkin_ws/src:/opt/ros/kinetic/share
+
+ export ROS_PACKAGE_PATH= /home/ben/catkin_ws/src:${ROS_PACKAGE_PATH}
+
+
+## ORB_SLAM2 DataSet Benchmark
+ ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml /home/ben/DataSet_ORBSLAM2/rgbd_dataset_freiburg1_xyz
+
+ ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml /home/ben/DataSet_ORBSLAM2/rgbd_dataset_freiburg1_360
+
+python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associations.txt
+
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM2.yaml /home/ben/DataSet_ORBSLAM2/rgbd_dataset_freiburg2_pioneer_360 /home/ben/DataSet_ORBSLAM2/rgbd_dataset_freiburg2_pioneer_360/associations.txt
+
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM2.yaml /home/ben/DataSet_ORBSLAM2/rgbd_dataset_freiburg2_pioneer_360
+
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM2.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg2_large_with_loop
+./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTI00-02.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/KITTI/02
+./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTI00-02.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/KITTI/00
+./Examples/Monocular/mono_euroc Vocabulary/ORBvoc.txt Examples/Monocular/EuRoC.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/EuRoc/MH_05_difficult/mav0/cam0/data Examples/Monocular/EuRoC_TimeStamps/MH05.txt
+./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTI00-02.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/KITTI/02
+./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTI00-02.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/KITTI/00
+./Examples/Stereo/stereo_euroc Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/EuRoc/MH_01_easy/mav0/cam0/data /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/EuRoc/MH_01_easy/mav0/cam1/data Examples/Stereo/EuRoC_TimeStamps/MH01.txt
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM2.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg2_large_with_loop /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg2_large_with_loop/associate.txt
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg1_xyz /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg1_xyz/associate.txt
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM2.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg2_pioneer_360 /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg2_pioneer_360/associate.txt
+rgbd_dataset_freiburg1_360
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg1_360 /media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/TUM/rgbd_dataset_freiburg1_360/associate.txt
+rosrun ORB_SLAM2 ZED_Mono Vocabulary/ORBvoc.txt Examples/ROS/ORB_SLAM2/ZED_SN4327.yaml
+roslaunch zed_wrapper zed.launch  svo_file:=/media/ben/Files/Study/Library/Work/Cotton_Picker/ZED_Camera/Projects/ZED_DATA2/11.svo
+
+./dso_dataset files=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/sequence_19/images/ calib=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/sequence_19/camera.txt gamma=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/sequence_19/pcalib.txt vignette=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/sequence_19/vignette.png preset=0 mode=0
+./dso_dataset files=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/dso_vo_sequence_19/images/ calib=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/dso_vo_sequence_19/camera.txt gamma=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/dso_vo_sequence_19/pcalib.txt vignette=/media/ben/Files/BaiduYunDownload/DataSet_ORBSLAM2/dso_vo_sequence_19/vignette.png preset=1 mode=0
+rosrun dso_ros dso_live image:=/zed/left/image_raw_color calib=/home/ben/dso/zed_camera.txt
+
+
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/ben/ORB_SLAM2/Examples/ROS
+
+ rosrun ORB_SLAM2 Stereo /home/ben/ORB_SLAM2/Vocabulary/ORBvoc.txt /home/ben/ORB_SLAM2/Examples/Stereo/KITTI00-02.yaml true
+
+sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-rocon-remocon ros-kinetic-rocon-qt-library ros-kinetic-ar-track-alvar-msgs
+
+
+source /home/ben/OpenNI-Linux-x64-2.2/OpenNIDevEnvironment/
+
+ roslaunch turtlebot_bringup minimal.launch --screen
+ roslaunch turtlebot_follower follower.launch
+ roslaunch kobuki_keyop safe_keyop.launch
+ rosrun kobuki_testsuite test_digital_output.py
+ rosrun kobuki_testsuite test_events.py
+ rosrun kobuki_testsuite test_led_array.py
+ sudo apt-get install ros-kinetic-rocon-remocon ros-kinetic-rocon-apps
+ sudo apt-get install ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions
+ sudo apt-get install ros-kinetic-turtlebot-interactive-markers
+ roslaunch turtlebot_interactive_markers interactive_markers.launch --screen
+ roslaunch turtlebot_navigation gmapping_demo.launch
+ roslaunch freenect_launch freenect.launch
+
+
+ echo export ROS_MASTER_URI=http://localhost:11311 >> ~/.bashrc
+ echo export ROS_HOSTNAME=172.20.42.48 >> ~/.bashrc
+
+
+ sudo apt-get install -y cmake-qt-gui git build-essential libusb-1.0-0-dev libudev-dev openjdk-7-jdk freeglut3-dev libglew-dev  libsuitesparse-dev zlib1g-dev libjpeg-dev
+
+ source ~/tensorflow/bin/activate
+ kill -9 $(lsof -i:61440 | awk '{if($2~/[0-9]+/) print $2}')
+ Lie Groups,Lie Algebras,and Representations Second Edition
+ Intelligent Data Analysis and Application
+ Past, Present, and Future of Simultaneous Localization And Mapping: Towards the Robust-Perception Age
+
+ cmake -D CMAKE_BUILD_TYPE=RELEASE -D OPENCV_EXTRA_MODULES_PATH=/home/ben/Downloads/opencv_contrib-3.1.0/modules -D CMAKE_INSTALL_PREFIX=/usr/local/opencv310 ..
+ export http_proxy="http://127.0.0.1:1080"
+
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda-8.0
+export PATH=/usr/local/cuda-8.0/bin:$PATH
+
+set(OpenCV_DIR "/usr/local/opencv310/share/OpenCV")
